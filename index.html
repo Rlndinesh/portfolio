@@ -12,13 +12,13 @@
         <div class="container">
             <nav>
                 <!-- <img src="images/MyLogo.png" alt="logo" class="logo"> -->
-                <h1><i><span>R.L.N</span> Dinesh</i></h1>
+                <h1 class="logo"><i><span>R.L.N</span> Dinesh</i></h1>
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Servies</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Servies</a></li>
+                    <li><a href="#portifolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                      <i class="fa" onclick="closemenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
@@ -47,7 +47,7 @@
                     <img src="images/About-img.jpg" alt="Dinesh's-image">
                 </div> 
                 <div class="about-col-2">
-                    <h1 class="subtitle">About me</h1>
+                    <h1 class="sub-title">About me</h1>
                     <p>Highly motivated and detail-oriented, recent graduate
                          with a Bachelor's degree in Computer Science. 
                          Equipped with skills in Software Engineering, Web Development, 
@@ -145,23 +145,6 @@
                      </div>
                 </div>
                 <div class="work">
-                    <img src="images/project2.jpg" alt="project2">
-                    <h3 class="gohid">Patient Data Management System</h3>
-                    <div class="layer">
-                        <h3>Patient Data Management System</h3>
-                    <p>This system enabling hospitals to manage information and data related to all aspects of healthcare
-                        - processes, providers, patients, and more </p>
-                        <a href="https://github.com/Rlndinesh/Patient-Data-Management-System.git" title="project2-link">
-                            <i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                            </svg>
-                        </i>
-                        </a>
-                    </div>
-                </div>
-                <div class="work">
                     <img src="images/project3.png" alt="project1">
                     <h3 class="gohid">Autonomous Network Defence and Monitor</h3>
                     <div class="layer">
@@ -178,6 +161,24 @@
                             </a>
                     </div>
                 </div>
+                <div class="work">
+                    <img src="images/project2.jpg" alt="project2">
+                    <h3 class="gohid">Patient Data Management System</h3>
+                    <div class="layer">
+                        <h3>Patient Data Management System</h3>
+                    <p>This system enabling hospitals to manage information and data related to all aspects of healthcare
+                        - processes, providers, patients, and more </p>
+                        <a href="https://github.com/Rlndinesh/Patient-Data-Management-System.git" title="project2-link">
+                            <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </i>
+                        </a>
+                    </div>
+                </div>
+                
             </div>
             <a href="#" class="btn">See more</a>
         </div>
@@ -224,12 +225,13 @@
                     <a href="images/R Lakshmi Narasimha Dinesh.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="email" required>
+                        <input type="email" name="Email" placeholder="Email" required>
                         <textarea name="Message" rows="6" placeholder="Message"></textarea>
-                        <button type="submit" class="btn btn2">submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -252,12 +254,30 @@
         var sidemenu =document.getElementById("sidemenu")
         function openmenu(){
             sidemenu.style.right="0"
-            
         }
         function closemenu(){
             sidemenu.style.right="-200px"
         }
 
     </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbytaqh2PTeAOG1a5GEfyylQ335M0MFaPd5avCx91fxYojGV7TDx__-2t_f5BTGGhn4m/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .then(response=>{
+        msg.innerHTML="Message sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
